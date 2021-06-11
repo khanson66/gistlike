@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Snippet
+from .models import Snippet,Tag
 
 
 # Register your models here.
@@ -13,3 +13,5 @@ class SnippetAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Snippet, SnippetAdmin)
+
+admin.site.register(Tag)
